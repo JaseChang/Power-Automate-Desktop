@@ -142,7 +142,7 @@ IF CustomFormData['Period input'] = 1 THEN
         Excel.ReadFromExcel.ReadCell Instance: ExcelInstance StartColumn: $'''B''' StartRow: 10 ReadAsText: False CellValue=> EPS
         Excel.CloseExcel.Close Instance: ExcelInstance
         Word.LaunchWord.Launch Visible: True Instance=> WordInstance
-        Word.WriteToWord.WriteStartOfDocument Instance: WordInstance Text: $'''公司代號:3380
+        Word.WriteToWord.WriteStartOfDocument Instance: WordInstance Text: $'''公司代號:
 序號:1
 主旨:113年第%CustomFormData['Period input']%季合併財務報告業經提報董事會通過
 符合條款-第四條第XX款:31
@@ -259,7 +259,7 @@ IF CustomFormData['Period input'] = 2 THEN
         Text.FromNumber Number: ParentProfit DecimalPlaces: 0 UseThousandsSeparator: True FormattedNumber=> ParentProfit2
         Excel.CloseExcel.Close Instance: ExcelInstance
         Word.LaunchWord.Launch Visible: True Instance=> WordInstance
-        Word.WriteToWord.WriteStartOfDocument Instance: WordInstance Text: $'''公司代號:3380
+        Word.WriteToWord.WriteStartOfDocument Instance: WordInstance Text: $'''公司代號:
 序號:1
 主旨:113年第%CustomFormData['Period input']%季合併財務報告業經提報董事會通過
 符合條款-第四條第XX款:31
@@ -397,7 +397,7 @@ IF CustomFormData['Period input'] = 3 THEN
         Text.FromNumber Number: ParentProfit DecimalPlaces: 0 UseThousandsSeparator: True FormattedNumber=> ParentProfit2
         Excel.CloseExcel.Close Instance: ExcelInstance
         Word.LaunchWord.Launch Visible: True Instance=> WordInstance
-        Word.WriteToWord.WriteStartOfDocument Instance: WordInstance Text: $'''公司代號:3380
+        Word.WriteToWord.WriteStartOfDocument Instance: WordInstance Text: $'''公司代號:
 序號:1
 主旨:113年第%CustomFormData['Period input']%季合併財務報告業經提報董事會通過
 符合條款-第四條第XX款:31
@@ -422,7 +422,7 @@ IF CustomFormData['Period input'] = 3 THEN
         Word.CloseWord.Close Instance: WordInstance
         System.RunApplication.RunApplication ApplicationPath: $'''C:\\Windows\\System32\\notepad.exe''' WindowStyle: System.ProcessWindowStyle.Normal ProcessId=> AppProcessId
         UIAutomation.PopulateTextField.PopulateTextField TextField: appmask['Window \'未命名 - 記事本\'']['Document \'文字編輯器\''] Text: WordData Mode: UIAutomation.PopulateTextMode.Append ClickType: UIAutomation.PopulateMouseClickType.SingleClick
-        DISABLE Display.ShowMessageDialog.ShowMessage Title: $'''財報公告檔''' Message: $'''公司代號:3380
+        DISABLE Display.ShowMessageDialog.ShowMessage Title: $'''財報公告檔''' Message: $'''公司代號:
 序號:1
 主旨:11x年第x季合併財務報告業經提報董事會通過
 符合條款-第四條第XX款:31
@@ -527,7 +527,7 @@ IF CustomFormData['Period input'] = 4 THEN
         Excel.ReadFromExcel.ReadCell Instance: ExcelInstance StartColumn: $'''B''' StartRow: 10 ReadAsText: False CellValue=> EPS
         Excel.CloseExcel.Close Instance: ExcelInstance
         Word.LaunchWord.Launch Visible: True Instance=> WordInstance
-        Word.WriteToWord.WriteStartOfDocument Instance: WordInstance Text: $'''公司代號:3380
+        Word.WriteToWord.WriteStartOfDocument Instance: WordInstance Text: $'''公司代號:
 序號:1
 主旨:113年第%CustomFormData['Period input']%季合併財務報告業經提報董事會通過
 符合條款-第四條第XX款:31
