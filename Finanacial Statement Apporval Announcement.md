@@ -1,12 +1,15 @@
-財報通過重訊稿製作
+財報重訊公告稿製作
 ===
 
-
-
-
-Main
+流程
 ---
+1. 執行Main
+2. 執行Subflow: Q1, Q2, Q3, Q4
 
+<details>
+  
+<summary>Main </summary>
+  
 ```
 @@statistics_TextBlock: '1'
 @@statistics_Input_File: '1'
@@ -76,8 +79,10 @@ IF CustomFormData['Period input'] = 4 THEN
     CALL Q4
 END
 ```
-SubFlow Q1
----
+</details>
+  
+<details>
+<summary>SubFlow Q1</summary>
 
 ```
 Variables.CreateNewList List=> List
@@ -183,9 +188,10 @@ END
   "ConnectionReferences": []
 }
 ```
+</details>
 
-SubFlow Q2
----
+<details>
+<summary>SubFlow Q2</summary>
 
 ```
 Variables.CreateNewList List=> List
@@ -320,9 +326,10 @@ END
   "ConnectionReferences": []
 }
 ```
+</details>
 
-SubFlow Q3
----
+<details>
+<summary>SubFlow Q3</summary>
 
 ```
 Variables.CreateNewList List=> List
@@ -457,9 +464,10 @@ END
   "ConnectionReferences": []
 }
 ```
+</details>
 
-SubFLow Q4
----
+<details>
+<summary>SubFLow Q4</summary>
 
 ```
 Variables.CreateNewList List=> List
@@ -566,3 +574,4 @@ END
 }
 
 ```
+</details>
