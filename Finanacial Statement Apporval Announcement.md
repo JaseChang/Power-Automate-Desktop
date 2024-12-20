@@ -3,11 +3,15 @@
 
 流程
 ---
-1. 執行Main
+1. 執行Main:
    - 匯入Pdf檔: 如事務所提供有浮水印字樣，需將浮水印清除
    - 輸入董事會日期
    - 輸入季度
-2. 執行Subflow: Q1, Q2, Q3, Q4
+2. 執行Subflow:
+   - Q1
+   - Q2
+   - Q3
+   - Q4
 
 程式碼
 ---
@@ -88,7 +92,7 @@ END
 </details>
   
 <details>
-<summary>SubFlow Q1</summary>
+<summary>Subflow Q1</summary>
 
 ```
 Variables.CreateNewList List=> List
@@ -197,7 +201,7 @@ END
 </details>
 
 <details>
-<summary>SubFlow Q2</summary>
+<summary>Subflow Q2</summary>
 
 ```
 Variables.CreateNewList List=> List
@@ -335,7 +339,7 @@ END
 </details>
 
 <details>
-<summary>SubFlow Q3</summary>
+<summary>Subflow Q3</summary>
 
 ```
 Variables.CreateNewList List=> List
@@ -473,7 +477,7 @@ END
 </details>
 
 <details>
-<summary>SubFLow Q4</summary>
+<summary>Subflow Q4</summary>
 
 ```
 Variables.CreateNewList List=> List
